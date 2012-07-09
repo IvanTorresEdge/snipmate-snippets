@@ -1,7 +1,7 @@
-function ${1:Name} (${2:argument}) {
-	if (!(this instanceof arguments.callee)) {
-		throw new Error('Constructor functions can only be executed using the \'new\' operator.');
+var ${1:Name} = (function () {
+	function $1(${2:args}) {
+		${3}
 	}
 
-	${3:// TODO: code}
-}
+	return $1;
+})();
